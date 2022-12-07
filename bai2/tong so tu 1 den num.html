@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAI2</title>
+</head>
+<body>
+<h1>Tính tổng các phần tử từ 1 đến số vừa nhập vào.
+</h1>
+<input oninput="tinhTong()" id="inp" type="number"> <br>
+Tổng<h2 id="dis"></h2>
+
+
+<script>
+    function tinhTong() {
+        
+
+    let a=+document.getElementById('inp').value;
+    let sum=0;
+
+
+    for(let i=1;i<=a;i++){
+        sum=sum+i
+    }
+    document.getElementById('dis').innerHTML= sum;
+    }
+</script>
+</body>
+</html>
